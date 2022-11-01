@@ -1,0 +1,28 @@
+.bg {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  &--exploration {
+  background-image: url('../images/mountains-universe-3.png');
+  }
+
+  &--universe {
+    background-image: url('../images/mountains-universe02.png');
+  }
+
+  &--home {
+    display: grid;
+    place-content: center;
+    
+    background-image: url('../images/mountains-universe-1.png');
+  }
+}

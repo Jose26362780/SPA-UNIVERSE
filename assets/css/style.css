@@ -1,0 +1,259 @@
+body {
+  background-color: rgb(2, 1, 22);
+}
+
+header nav {
+  margin-left: 7.2rem;
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+header nav .logo {
+  display: block;
+}
+header nav ul {
+  gap: 3.2rem;
+  display: flex;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  align-items: center;
+}
+header nav ul li a {
+  font-size: 2.1rem;
+  font-family: "Roboto", sans-serif;
+  color: #E1E1E6;
+  text-decoration: none;
+  transition: 0.2s ease-in;
+}
+header nav ul li a:hover {
+  color: #FFFFFF;
+  transition: 0.2s ease-in;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.exploration, .universe {
+  margin-left: 7rem;
+}
+.exploration h1, .universe h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #E1E1E6;
+  font-size: 4.8rem;
+  line-height: 6rem;
+  margin-top: 20rem;
+}
+.exploration p, .universe p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.9rem;
+  color: #E1E1E6;
+  width: 100%;
+  max-width: 64.8rem;
+}
+
+.home {
+  display: grid;
+  place-content: center;
+  position: relative;
+}
+.home h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 6rem;
+  color: #E1E1E6;
+}
+.home a {
+  margin: 0 auto;
+}
+.home a.home-redirect {
+  margin-top: 1.8rem;
+  padding: 1.2rem 3.2rem;
+  border-radius: 5px;
+  background-color: transparent;
+  border: 2px solid #FFFFFF;
+  font-family: "Roboto", sans-serif;
+  color: #FFFFFF;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+.home a.home-redirect:hover {
+  background-color: #FFFFFF;
+  color: #02799D;
+  transition: 0.2s ease-in;
+}
+
+.bg {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.bg--exploration {
+  background-image: url("../images/mountains-universe-3.png");
+}
+.bg--universe {
+  background-image: url("../images/mountains-universe02.png");
+}
+.bg--home {
+  display: grid;
+  place-content: center;
+  background-image: url("../images/mountains-universe-1.png");
+}
+
+.hamburguer {
+  display: none;
+  cursor: pointer;
+}
+.hamburguer .bar {
+  display: block;
+  width: 2.8rem;
+  height: 3px;
+  border-radius: 2px;
+  margin: 5px auto;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 600px) {
+  nav {
+    justify-content: space-between;
+  }
+
+  .galaxy {
+    margin-right: 2rem;
+    display: block;
+    justify-content: space-between;
+  }
+
+  .galaxy.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .galaxy.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .galaxy.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: -300px;
+    left: 0;
+    gap: 0;
+    background-color: rgb(2, 1, 22);
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+    transition: all 0.3s ease-out;
+  }
+
+  .nav-item {
+    margin: 1.6rem 0;
+  }
+
+  .nav-menu.active {
+    top: 0;
+    height: 100vh;
+  }
+}
+@media (max-width: 768px) {
+  .home h1 {
+    font-size: 3.2rem;
+  }
+  .home a button {
+    margin-top: 0.8rem;
+    padding: 0.8rem 2.4rem;
+    font-size: 1.2rem;
+  }
+
+  .exploration h1,
+.universe h1 {
+    font-size: 3.8rem;
+  }
+  .exploration p,
+.universe p {
+    font-size: 1.5rem;
+    width: 100%;
+    max-width: 50rem;
+  }
+}
+@media (max-width: 600px) {
+  nav {
+    margin-left: 2rem !important;
+    margin-top: 2rem !important;
+  }
+  .exploration,
+.universe {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+:root {
+  font-size: 62.5%;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
