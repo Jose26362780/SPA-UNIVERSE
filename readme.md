@@ -5,7 +5,7 @@
 
 > Trilha Explorer 
 
-Projeto construido do evento Next Level Week da Rocketseat. 
+Projeto construido do desafio 06 do programa Explorer da rocketseat 
 
 👉🏼[Clique aqui para accessar](https://spa-universe-01-xi.vercel.app/)
 
